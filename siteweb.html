@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Autoroutes</title>
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:80px;
+margin-top:40px;
+}
+
+table{
+border-collapse:collapse;
+width:200px;
+}
+
+th{
+background:#e0e0e0;
+padding:10px;
+font-size:22px;
+}
+
+td{
+border:1px solid #ccc;
+padding:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Autoroutes</h1>
+
+<div class="container">
+
+<table id="a40">
+<tr><th>Autoroute 40</th></tr>
+</table>
+
+<table id="a55">
+<tr><th>Autoroute 55</th></tr>
+</table>
+
+</div>
+
+<script>
+
+let table40 = document.getElementById("a40");
+let table55 = document.getElementById("a55");
+
+for(let km=187; km<=210; km++){
+let row = table40.insertRow();
+let cell = row.insertCell();
+cell.textContent = km;
+}
+
+for(let km=180; km<=196; km++){
+let row = table55.insertRow();
+let cell = row.insertCell();
+
+if(km === 180){
+let link = document.createElement("a");
+link.href="https://maps.app.goo.gl/axWTHwzAGyA29Bd18?g_st=ic";
+link.textContent = km;
+cell.appendChild(link);
+}else{
+cell.textContent = km;
+}
+
+}
+
+</script>
+
+</body>
+</html>
