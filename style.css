@@ -4,7 +4,6 @@ text-align:center;
 margin:0;
 padding:5px;
 background:#f5f5f5;
-position:relative;
 }
 
 h1{
@@ -46,13 +45,4 @@ cursor:pointer;
 
 .km:hover{
 background:#146620;
-}
-
-.signature{
-position:absolute;
-bottom:calc(env(safe-area-inset-bottom) + 10px);
-right:10px;
-font-size:12px;
-color:#000;
-z-index:9999;
 }
