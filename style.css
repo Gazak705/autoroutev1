@@ -58,3 +58,15 @@ margin-left:-100px;
 font-size:20px;
 color:#000000;
 }
+
+.title-bar{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+}
+
+.logo{
+height:35px;
+}
